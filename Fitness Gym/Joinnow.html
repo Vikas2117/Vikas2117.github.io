@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Now</title>
+    <link rel="icon" sizes="32*32" href="https://image.shutterstock.com/image-vector/colorful-star-text-join-us-260nw-748881019.jpg" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        text-align: center;
+        background: url("wp2491466-dumbbell-wallpapers.jpg");
+        background-position: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .clip-circle {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+      }
+      .container {
+        margin-top: 10px;
+        color: white;
+        text-align: center;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .form-group input {
+        background: white;
+        color: black;
+        font-family: "Baloo Bhaina 2", cursive;
+        text-align: center;
+        display: block;
+        line-height: 2;
+        width: 40%;
+        margin: 6px auto;
+        border-radius: 20px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        font-weight: bolder;
+        font-size: 15px;
+      }
+      .btn {
+        margin: 0px 1px;
+        color: black;
+        background-color: white;
+        padding: 6px 25px;
+        border: 2px solid grey;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: greenyellow;
+        color: black;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease-in;
+      }
+
+      @media screen and (min-width: 200px) and (max-width: 1000px) {
+        .form-group input {
+          width: 100%;
+          max-width: 80%;
+        }
+        .clip-circle {
+          display: flex;
+          flex-wrap: wrap;
+          /* flex-direction:column; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Join The Best Gym In Mirzapur</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter Your Name"
+            required
+            autofocus
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter Your State"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter Your Locality"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter Your Age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter Your Gender"
+            required
+          />
+        </div>
+
+        <button class="btn" onclick="valid()">Submit</button>
+      </form>
+      <div class="clip-circle">
+        <a href="wp2491514.jpg" download>
+          <img class="img" src="wp2491514.jpg" alt="" />
+        </a>
+        <a href="pexels-photo-416809.jpeg" download>
+          <img class="img" src="pexels-photo-416809.jpeg" alt="" />
+        </a>
+        <a href="pexels-photo-2475878.jpeg" download>
+          <img class="img" src="pexels-photo-2475878.jpeg" alt="" />
+        </a>
+      </div>
+    </div>
+    <script>
+      function valid() {
+        alert("thanks for Registration");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-color: black; */
+            
+        }
+        header{
+            background:url('b1.jpg');
+            background-repeat:no-repeat ;
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+        }
+        header h1{
+            color:white;
+            position: absolute;
+            left: 14%;
+        } 
+        .text{
+            position: absolute;
+            top:20%;
+            left: 7%;
+            width:50%;
+            color:white;
+            font-size: 30px;
+        }
+        .text-1{
+            position: absolute;
+            top:60%;
+            left: 14%;
+            width:40%;
+            color:white;
+            font-size: 20px;
+            
+        }
+         button{
+             max-width:32%;
+             width: 100%;
+            height: 2.5rem;
+            outline:none;
+            border:none;
+            border:2px solid white;
+            background-color: transparent;
+            color:white;
+            font-weight: 600;
+        }
+         button:hover{
+            background-color: white;
+            color:rgb(10, 9, 9);
+              border:2px solid rgb(7, 6, 6);
+              cursor: pointer;
+        }
+        .img{
+            width:50%;
+            position: absolute;
+            left: 40%;
+        }
+        .img img{
+            background: transparent;
+        }
+         span{
+            color:red;
+            font-weight: 600;
+        }
+        .container{
+            width:100%;
+            height: 38vh;
+            background-color: red;
+            text-align: center;
+            padding: 20px 0px 0px 0px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container h1{
+            color: white;
+            width:100%;
+        }
+        .container p{
+            color:white;
+            /* margin: 0px 200px; */
+            width:100%;
+        }
+        section{
+            width:100%;
+            height:100%;
+            background-color: slateblue;
+            justify-content: center;
+        }
+        .section-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .image{
+            width:50%;
+            display: flex;
+            justify-content: center;
+            background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+            background-position: center;
+            background-size: cover;
+            height: 60vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: teal;
+            background-repeat: no-repeat;
+        }
+        .image-1{
+            /* background-image: url('A2.jpg'); */
+            width:50%;
+            display: flex;
+            background-image: url('https://images.unsplash.com/photo-1554344728-77cf90d9ed26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJvZHlidWlsZGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+            /* background-position: center; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 60vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: tea
+            
+        }
+        .about{
+            background-color: tomato;
+            align-items: center;
+            display: flex;
+            height: 60vh;
+            justify-content: center;
+            padding: 0px 100px;
+            text-align: justify;
+            align-items: center;
+            flex-direction: column;
+            /* line-height: 100vh; */
+            width:50%;
+        }
+        .about h2{
+            text-align: justify;
+        }
+        
+        main{
+            height:auto;
+            background-color: yellow;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            /* display: flex; */
+            justify-content: center;
+            padding: 10px 0px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        main img{
+            width:100px;
+            height:100px;
+            border-radius: 50%;
+        }
+        .video{
+            height:auto;
+            /* background-color: rgb(153, 54, 54); */
+            text-align: center;
+            padding: 20px 0px;
+            line-height: 2;
+        }
+        .footer{
+            height:110px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-image: url('A2.jpg');
+            background-position: center;
+            color:white;
+            /* background-size: cover; */
+            /* padding: 20px; */
+            /* line-height:110px ; */
+        }
+        @media (max-width:500px){
+            .text{
+            position: absolute;
+            top:10%;
+            left: 7%;
+            width:50%;
+            color:white;
+            font-size: 30px;
+         
+        }
+        .text-1{
+            position: absolute;
+            top:35%;
+            left: 14%;
+            width:100%;
+            color:white;
+            font-size: 30px;
+ }
+ .text-1 button{
+     max-width: 200px;
+ }
+    section{
+        display: block;
+    width:100%;
+}
+.section-container{
+    display: block;
+}
+iframe{
+    width:100%;
+    max-width: 50%;
+}
+     
+        
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BodyBuilding</h1>   
+        
+
+            <div class="text">
+                <h1>YOUR ALTIMATE<br>  <span>TRAINING</span><br>
+                    PARTNER</h1> </div>
+                </div>
+                <div class="text-1">
+                <p><span> IMPROVE </span>STREANGTH</p>
+                <p><span> BURN </span>MORE FAT</p>
+                <p>GET <span>RIPED </span>MUSCLES</p><br>
+                <button>JOIN NOW</button>
+               </div>
+               
+               </header>
+                <div class="container"> 
+                  <h1>SUPERCHARGE YOUR WORKOUT</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos rerum, itaque laudantium provident, expedita perspiciatis amet iste assumenda neque illum atque nostrum, tempore quia quo eligendi dolore illo quis quasi.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugiat beatae tempora at similique earum laborum, doloremque excepturi iusto inventore assumenda. Impedit repudiandae fugiat laborum fugit, in vel voluptatem.  </p>
+                 </div> 
+                 <section>
+                    <div class="section-container">
+                        <div class="image">
+                            </div>
+                            <div class="about">
+                                <h2>HELPS IMPROVE STREANGTH</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore aspernatur numquam ex recusandae, ab inventore reprehenderit ea eius corporis. Harum tenetur odit inventore sequi vero eius corrupti voluptas neque!</p><br>
+                                <button>JOIN NOW</button>
+                                </div>
+                                </div>
+                                <div class="section-container">
+                                    <div class="about">
+                                <h2>BOOST TESTOSTERONE</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore aspernatur numquam ex recusandae, ab inventore reprehenderit ea eius corporis. Harum tenetur odit inventore sequi vero eius corrupti voluptas neque!</p><br>
+                                <button>JOIN NOW</button>
+                                </div>
+                        <div class="image-1">
+                            
+                            </div>
+                                </div>    
+                   
+                    </section>
+
+                    <main>
+                        <img src="vikki.jpg" alt="">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi fugit sapiente sequi doloremque velit ea vitae eius nostrum, laudantium voluptates. Odit possimus qui facere animi quibusdam corrupti doloribus modi fugiat.</p>
+                        <span>_vikas</span>
+                        
+                        </main>
+                        <div class="video">
+                            <h2>LATEST VIDEO</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus commodi esse nisi itaque officia. Tempore tempora molestiae ipsam natus ea! Fuga asperiores nesciunt earum praesentium aperiam ratione libero vero tempore.</p>
+                            <iframe width="510" height="315" src="https://www.youtube.com/embed/S1jB8Mmdi3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            </div>
+                            <div class="footer">
+                                <p>GAIN MUSCLE & LOOK SMART </p>
+                                <P>WITH OUR EFFICIENT ANABOLIC ASTEROID</P>
+                                
+                                </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us </title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJAGm49SKXZT9QgMy0-Qy6ihUfgIeUbaeYg&usqp=CAU" type="image/jpg">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> 
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('wp2491466-dumbbell-wallpapers.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-size: cover;
+            height: auto;
+            
+        }
+        .container{
+            justify-content: space-between;
+        }
+        .container h1{
+            text-align: center;
+            background-color: black;
+            color:white;
+            padding: 10px 0px;
+        }
+        .container img{
+            display: flex;
+            width:200px;
+            margin:0 auto;
+        }
+        .contact{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            line-height: 1.5;
+        }
+
+        .form{
+            display: flex;
+            width: 400px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            background-color: rgba(20, 19, 19, 0.4);
+        }
+        .form h1{
+            color:rgb(253, 252, 252);
+            margin-bottom: 20px;
+        }
+        input{
+            display: block;
+            width:300px;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 0px 20px;
+            outline:none;
+            border-radius: 4px;
+            border:none;
+            border:2px solid rgb(233, 196, 196);
+            font-weight: 600;
+        }
+        input[type="submit"]{
+            width:100px;
+            outline:none;
+            border:none;
+            background-color: red;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        input[type="submit"]:hover{
+            background-color: blue;
+            cursor: pointer;
+            transition: all 0.5s ease-in;
+            font-size: 20px;
+        }
+        textarea{
+            width:300px;
+            height:60px;
+            line-height: 60px;
+            padding: 0px 20px;
+            outline:none;
+            font-weight: 600;
+            border:none;
+            border:2px solid rgb(201, 170, 170);
+        }
+        i{
+            font-weight: 600;
+            font-size: 35px;
+        }
+        .fa-whatsapp{
+            color:#25D366;
+        }
+        .fa-envelope-open-text{
+             color:#EA4335;
+        }
+        .fa-phone-alt{
+            color:blue;
+        }
+        .fa-map-marker-alt{
+            color:red;
+        }
+        a{
+            color:rgb(13, 12, 15);
+        }
+        a:hover{
+            color:rgb(195, 195, 206);
+        }
+        footer{
+            text-align: center;
+            margin-top: 30px;
+        }
+        footer img{
+            display: flex;
+            width:200px;
+            margin:0 auto;
+            height:auto;
+            border-radius: 50%;
+        }
+        .icon{
+            background-color: black;
+            padding: 10px 0px;
+        }
+        .icon i{
+            font-weight: 600;
+            font-size: 25px;
+            padding: 0px 10px;
+        }
+        .fa-facebook{
+                color:#266bf5;    
+           }
+           .fa-facebook:hover{
+                color:#bacff8;    
+           }
+           .fa-twitter{
+                color:#1DA1F2;  
+           }
+           .fa-twitter:hover{
+                color:#73c2f3;  
+           }
+            .fa-instagram{
+                color:rgb(245, 127, 127);
+            }
+            .fa-linkedin{
+                color:#0077b5;
+            }
+            .fa-linkedin:hover{
+                color:#40ade783;
+            }
+            .fa-instagram:hover{
+                color:red;
+            }
+            
+            .fa-youtube{
+                color:red;
+            }
+            .fa-youtube:hover{
+                color:rgb(241, 233, 233);
+            }
+        @media (max-width:600px){
+            .container{
+                display: block;
+                margin: 0px 0px 30px 0px;
+            }
+            .contact{
+                display: grid;
+                margin-top: 20px;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            input{
+                width:100%;
+            }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us </h1>
+        <div class="contact">
+            <div class="contact-container">
+                <i class="fas fa-map-marker-alt"></i><h2>Address</h2>
+                <p>MIG-251 Gautam Nagar <br>Bhopal Madhya Pradesh<br> 462023</p>
+                <a href="tel:+917470363949"> <i class="fas fa-phone-alt"></i><h2>Phone</h2></a>
+                <a href="https://wa.me/+917470363949"><i class="fab fa-whatsapp"></i><h2>Whatsapp me</h2></a>
+                <i class="fas fa-envelope-open-text"></i>
+                <a href="mailto:rajputvikki331@gmail.com"><h2>Email me</h2></a>
+                </div>
+        
+                <div class="form">
+                    <form>
+                        <h1>Send Message</h1>
+                        <input type="text" name="" id="" placeholder="Full Name" required> 
+                        <input type="email" name="" placeholder="Email" required>  
+                        <textarea placeholder="Type Your Message"></textarea>
+                        <input type="submit" name="" value="Send"   onclick="validation()" required>
+                        </form>
+                        </div>
+                </div>
+                <footer>
+                    <img src="vikki.jpg" alt="">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/vikas.singh35578"><i class="fab fa-facebook"></i></a> 
+                        <a href="https://www.twitter.com/vikas"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_vikas_rajput2117"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/vikas singh"><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </footer>
+                    </div>
+    </body>
+    </html>
